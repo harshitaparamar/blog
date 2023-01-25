@@ -1,0 +1,22 @@
+# <h1>Welcomes</h1>
+
+# <ul>
+#   <% @welcomes.each do |welcome| %>
+#     <li>
+#       <a href="<%= welcome_path(welcome) %>">
+
+#         <%= welcome.title %>
+#       </a>
+#     </li>
+#   <% end %>
+# </ul>
+<h1>Welcome</h1>
+
+<ul>
+  <% @welcomes.each do |welcome| %>
+    <li>
+      <%= link_to welcome.title, welcome %>
+    </li>
+  <% end %>
+</ul>
+
